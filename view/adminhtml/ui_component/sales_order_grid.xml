@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ *
+ * Adapttive/Ui: module for Magento2 provides enhanced ui grid with refresh and conditional filters
+ *
+ * @category XML
+ * @package Adapttive
+ * @subpackage Ui
+ * @author Milind Singh <hello@adapttive.com>
+ * @copyright 2020 Milind Singh
+ * @license MIT
+ * @version 1.0.0
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top" template="Adapttive_Ui/grid/toolbar">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="stickyTmpl" xsi:type="string">Adapttive_Ui/grid/sticky/sticky</item>
+            </item>
+        </argument>
+        <component name="listing_refresh" component="Adapttive_Ui/js/grid/refresh/refresh"/>
+    </listingToolbar>
+</listing>

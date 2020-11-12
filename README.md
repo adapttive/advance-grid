@@ -2,6 +2,10 @@
 
 Module for Magento 2 provides enhanced ui grid with refresh and conditional filters
 
+## installation
+
+`composer require adapttive/advance-grid`
+
 ## features
 
 - **refresh**: without the page reload (ready)

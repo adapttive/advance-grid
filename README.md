@@ -18,6 +18,7 @@ Module for Magento 2 provides enhanced ui grid with refresh and conditional filt
 - **refresh**: without the page reload ![ready](https://img.shields.io/badge/refresh-ready-green)
 - **filter**: with conditions ![under-development](https://img.shields.io/badge/filter-under--development-yellow)
 - **locking**: of columns for horizontal scroll ![under-development](https://img.shields.io/badge/locking-under--development-yellow)
+- **ajax actions**: without grid reload for individual rows ![under-development](https://img.shields.io/badge/ajax_actions-under--development-yellow)
 
 ## usage
 

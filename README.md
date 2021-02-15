@@ -22,8 +22,9 @@ Module for Magento 2 provides enhanced ui grid with refresh and conditional filt
 
 ## usage
 
-- added to sales order grid by default
+### refresh
 
+- added to sales order grid by default
 - to add to other ui grids, add the following to ui grid xml:
 
 ```xml

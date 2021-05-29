@@ -7,10 +7,11 @@ Module for Magento 2 provides enhanced ui grid with refresh and conditional filt
 - **refresh**: without the page reload (ready)
 - **filter**: with conditions (under-development)
 - **locking**: of columns for horizontal scroll (under-development)
+- **ui_bookmark**: dedicated grid to reset/delete saved bookmarks when they stuck (under-development)
 
 ## usage
 
-add the following to ui grid xml:
+**refresh**: add the following to ui grid xml:
 
 ```xml
    <listingToolbar name="listing_top" template="Adapttive_Ui/grid/toolbar">
@@ -22,3 +23,8 @@ add the following to ui grid xml:
         <component name="listing_refresh" component="Adapttive_Ui/js/grid/refresh/refresh"/>
    </listingToolbar>
 ```
+
+## references
+
+- https://devdocs.magento.com/guides/v2.3/ui_comp_guide/howto/new_component_declaration.html
+- https://devdocs.magento.com/guides/v2.4/ui_comp_guide/components/ui-toolbar.html

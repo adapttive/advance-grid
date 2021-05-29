@@ -21,6 +21,20 @@
                 <item name="stickyTmpl" xsi:type="string">Adapttive_Ui/grid/sticky/sticky</item>
             </item>
         </argument>
+        <filters name="listing_filters">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="templates" xsi:type="array">
+                        <item name="filters" xsi:type="array">
+                            <item name="text" xsi:type="array">
+                                <item name="component" xsi:type="string">Adapttive_Ui/js/form/element/filters/abstract</item>
+                                <item name="template" xsi:type="string">ui/grid/filters/field</item>
+                            </item>
+                        </item>
+                    </item>
+                </item>
+            </argument>
+        </filters>
         <component name="listing_refresh" component="Adapttive_Ui/js/grid/refresh/refresh"/>
     </listingToolbar>
 </listing>

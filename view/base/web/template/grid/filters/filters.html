@@ -1,0 +1,52 @@
+<div class="data-grid-filters-actions-wrap" collapsible="openClass: false, closeOnOuter: false">
+    <div class="data-grid-filters-action-wrap">
+        <button class="action-default" data-action="grid-filter-expand" disable="!hasVisible()" translate="'Filters'"
+                css="_active: hasVisible() && $collapsible.opened()"
+                toggleCollapsible/>
+    </div>
+</div>
+
+<scope args="chips" render=""/>
+
+<div class="admin__data-grid-filters-wrap" data-part="filter-form" css="_show: hasVisible() && $collapsible.opened()" keyboard="{ 13: apply }">
+    <fieldset class="admin__fieldset admin__data-grid-filters">
+        <legend class="admin__filters-legend">
+            <span translate="'Advanced filter'"/>
+        </legend>
+        <!-- ko foreach:  { data: $data.getRanges(), as: 'item' } -->
+        <fieldset class="admin__form-field" visible="$parent.isFilterVisible($data)">
+            <!-- ko foreach:  { data: $parent.getCondition(item.name + '_condition'), as: 'condition' } -->
+            <!-- ko template: condition.getTemplate()-->
+            <!-- /ko -->
+            <!-- /ko -->
+
+            <!-- ko template: item.getTemplate()-->
+            <!-- /ko -->
+        </fieldset>
+        <!-- /ko -->
+
+
+        <!-- ko foreach:  { data: $data.getPlain(), as: 'item' } -->
+        <fieldset class="admin__form-field" visible="$parent.isFilterVisible($data)">
+            <!-- ko foreach:  { data: $parent.getCondition(item.name + '_condition'), as: 'condition' } -->
+            <!-- ko template: condition.getTemplate()-->
+            <!-- /ko -->
+            <!-- /ko -->
+
+            <!-- ko template: item.getTemplate()-->
+            <!-- /ko -->
+        </fieldset>
+        <!-- /ko -->
+    </fieldset>
+
+    <div class="admin__data-grid-filters-footer">
+        <div class="admin__footer-main-actions">
+            <button class="action-tertiary" type="button" data-action="grid-filter-cancel" click="cancel" closeCollapsible>
+                <span translate="'Cancel'"/>
+            </button>
+            <button class="action-secondary" type="button" data-action="grid-filter-apply" click="apply" closeCollapsible>
+                <span translate="'Apply Filters'"/>
+            </button>
+        </div>
+    </div>
+</div>
